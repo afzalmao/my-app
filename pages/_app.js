@@ -1,7 +1,4 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+import _app from '../ui/page-components/_app/index';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
-
-export default MyApp
+export default _app;
