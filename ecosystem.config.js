@@ -5,11 +5,11 @@ module.exports = {
 
   deploy : {
     production : {
-      key: 'afjalmao1.pem',
+      key: 'mao.pem',
       user : 'ubuntu',
-      host : '52.195.12.155',
+      host : '54.65.102.41',
       ref  : 'origin/main',
-      repo : 'git@github.com:ankitcogoport/my-app.git',
+      repo : 'https://github.com/afzalmao/my-app.git',
       path : '/home/ubuntu',
       'pre-deploy-local': '',
       'post-deploy' : 'source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.js --env production',
